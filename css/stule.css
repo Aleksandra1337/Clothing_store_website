@@ -1,0 +1,604 @@
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	
+	font-size: 15px;
+	line-height: 1.6;
+	color: #333;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.container {
+	width:100%;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+
+/* 1 стр */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	width: 100%;
+	height: 100vh;
+	
+	background: url("../images/images/intro.jpg") center no-repeat;
+}
+
+.intro_inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    
+    text-align: center;
+}
+
+
+/* верхняя шапка */
+
+.header {
+	width:100%;
+	padding-top: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index:1200;
+}
+
+.header_inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header_logo {
+	font-size: 30px;
+	font-weight: 100;
+	color: #000;
+    text-transform: uppercase;
+}
+
+
+/* Настройки навигации*/
+
+.nav ul{
+	font-size:14px;
+	text-transform: uppercase;
+    display: flex;
+    list-style: none;
+}
+
+
+
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+	
+	color: #000;
+	text-decoration: none;
+	
+	transition: color .1s linear;
+}
+
+.nav_link:hover {
+	color: #00c8c8;
+}
+
+
+/* 1 кнопка посередине экрана */
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    margin: 40px;
+
+    border: 3px solid #000;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+    border: 3px solid #000;
+}
+
+
+/* Популярная одежда */
+
+.clothes{
+	max-width: 1500px;
+    margin: 0 auto;
+    
+    text-align: center;
+}
+
+.clothes_t{
+	font-size: 20px;
+	font-weight: 100;
+    margin: 30px auto 30px;
+    text-align: center;
+}
+
+.clot {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clothes_item {
+    width: 380px;
+}
+
+.clothes_inner{
+    position: relative;
+    background-color: #95e1d3;
+}
+
+.clothes_item:hover .clothes_img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.clothes_item:hover .clothes_img img {
+    opacity: .1;
+}
+
+.clothes_item:hover .clothes_social {
+    opacity: 1;
+}
+
+.clothes_img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+}
+
+.clothes_img img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.clothes_social {
+    width: 100%;
+
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+
+    transition: opacity .2s linear;
+}
+
+
+/* Иконки при наведении на товар */
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social_item{
+    width: 55px;
+    height: 55px;
+    padding: 12px 10px;
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+    
+    font-size: 30px;
+    text-decoration: none;
+    color: #f38181;
+    line-height: 1;
+    
+    transition: background .1s linear, color .1s linear;
+}
+
+.social_item:last-child{
+    border-right: 0;
+}
+
+.social_item:hover{
+    color: #fff;
+    background-color: #f38181;
+}
+
+.clothes_info{
+    margin-top: 18px;
+    text-align: center;
+}
+
+
+/* 2 банер */
+
+.banner1{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	width: 100%;
+	height: 70vh;
+    background: url("../images/images/banner1.png") center no-repeat;
+}
+
+.container_banner{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.banner1_inner{
+    max-width: 850px;
+    text-align: center;
+}
+
+.banner1_suptitle {
+    margin-bottom: 20px;
+    font-size: 72px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.banner1_title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+
+/* Кнопка для второго баннера */
+
+.btn2 {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    margin: 40px;
+
+    border: 3px solid #000;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn2:hover {
+    background-color: #ff5353;
+    color: #fff;
+    border: 3px solid #ff5353;
+}
+
+
+/*
+.logos {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+*/
+
+
+/* иконки */
+
+.start_icons {
+    background-color: #95e1d3;
+    margin: 25px 0;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons_item {
+    flex: 1 1 0;
+    padding: 70px 25px;
+
+    border-left: 1px solid #b5eae0;
+
+    text-align: center;
+    color: #fff;
+}
+
+.icons_item:last-child {
+    border-right: 1px solid #b5eae0;
+}
+
+.icons_card {
+    margin-bottom: 10px;
+
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.icons_text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+/* Отзывы */
+
+.section_gray {
+    padding: 70px;
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+.reviews {
+    padding: 0 110px;
+    position: relative;
+}
+
+.reviews__item {
+    padding-left: 205px;
+    position: relative;
+}
+
+.reviews__photo {
+    border: 2px solid #95e1d3;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews__text {
+    margin-bottom: 15px;
+
+    font-size: 20px;
+    font-weight: 300;
+    color: #999;
+}
+
+.reviews__author {
+    font-size: 20px;
+    color: #333;
+}
+
+.reviews__author:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 3px;
+    margin-right: 10px;
+
+    background-color: #f38181;
+}
+
+.reviews__btn {
+    font-size: 0;
+    color: transparent;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.reviews__btn:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+}
+
+.reviews__btn--prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.reviews__btn--next {
+    right: 0;
+    transform: rotate(135deg);
+}
+
+
+/* Футер */
+
+.footer{
+    padding: 60px;
+}
+
+.footer_inner{
+    display: flex;
+    text-align: center;
+}
+
+.footer_contact{
+    width: 35%;
+}
+
+.footer_company{
+    width: 35%;
+}
+
+.footer_help{
+    width: 30%;
+}
+
+.footer_text{
+    font-size:18px;
+	text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer_social{
+    margin-bottom: 25px;
+}
+
+
+.footer_social-header{
+    padding: 13px 0;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.footer_social-header b{
+    font-size: 18px;
+}
+
+.footer_social-content a{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+
+    font-size: 30px;
+    color: #95e1d3;
+}
+
+.footer_us{
+    margin-bottom: 25px;
+    padding: 13px 0;
+}
+
+.nav_f{
+    color: #000;
+	text-decoration: none;
+	
+	transition: color .1s linear;
+}
+
+.nav_f:hover {
+	color: #00c8c8;
+}
+
+.footer_question{
+    margin-bottom: 25px;
+    padding: 13px 0;
+}
+
+.copyright {
+    width: 100%;
+    padding: 20px 0;
+
+    border-top: 1px solid #e5e5e5;
+
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.copyright span {
+    color: #00c8c8;
+    text-transform: uppercase;
+}
+
+
+/* Text */
+.text_start{
+    padding: 90px 0 0 0;
+}
+
+.text {
+    position: relative;
+}
+
+.text_1 {
+   	font-size: 24px;
+	font-weight: 100;
+	color: #00c8c8;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text_2 {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+    font-weight: 300;
+    color: #999;
+    text-align: center;
+}
+
+
+/* Иконки с выборами */
+
+.icons_card2{
+    width: 55px;
+    height: 55px;
+    padding: 10px 10px;
+    
+    font-size: 72px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1;
+}
+
+
+.icons_text2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+    
+}
+
+/* Банер всё о нас */
+
+.banner2{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	width: 100%;
+	height: 70vh;
+    background: url("../images/images/banner1.png") center no-repeat;
+}
+
+
+.banner2_inner{
+    max-width: 850px;
+    text-align: center;
+}
+
+.banner2_suptitle {
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.banner2_title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+
+
+
